@@ -1,0 +1,270 @@
+i {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: red;
+}
+
+section>h4 {
+    color: brown;
+}
+
+h6 {
+    margin: 10px 0 10px 10%;
+}
+
+h6>a {
+    color: gray;
+    font-size: smaller;
+}
+
+/**/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #212529;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 10px;
+}
+
+/**/
+.detail-slider {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #212529;
+    border-radius: 4px;
+    width: 80%;
+    align-items: center;
+    padding: 10px;
+}
+
+.details>p {
+    color: darkred;
+}
+
+.details>p:hover {
+    color: purple;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    /*padding: 10px;*/
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.details-cart {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.buttons>b {
+    color: lightred;
+}
+
+.buttons:hover {
+    color: red;
+}
+
+.bi-dash-lg {
+    color: red;
+}
+
+.bi-plus-lg {
+    color: green;
+}
+
+/** style rules for shopping-cartb **/
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 60%);
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/** style rules for cart-item **/
+.cart-item {
+    width: 100%;
+    border: 2px solid #212529;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 10px 0 10px 10px;
+}
+
+.title-price-x {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-item-price {
+    color: #212529;
+
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.cart-item-img {
+    width: 30%;
+    margin: auto;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+}
+
+/**style rules for label and some buttons**/
+.text-center {
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout {
+    background-color: green;
+}
+
+.removeAll {
+    background-color: red;
+}
+
+.bi-x-lg {
+    color: red;
+    font-weight: bold;
+}
+
+/*demo iPhone 14 pro max*/
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .shopping-cart {
+        grid-template-columns: repeat(1, 80%);
+    }
+
+    .details-cart {
+        flex-direction: column;
+    }
+
+    .cart-container {
+        flex-direction: column;
+        border-right: 1px solid gray;
+    }
+
+    .cart-item-img {
+        width: auto;
+        max-width: 80%;
+    }
+
+    .price-quantity {        
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .prefooter {
+        width: 60%;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .cart-item-img {
+        width: 40%;
+        min-width: 30%;
+    }
+
+    .details-cart {
+        flex-direction: column;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .prefooter {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: none;
+    }
+
+    .details-cart {
+        flex-direction: row;
+    }
+
+    .title-price-x {
+        padding: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1501px) {
+
+}
+
+@media only screen and (min-width: 1801px) {
+
+}
